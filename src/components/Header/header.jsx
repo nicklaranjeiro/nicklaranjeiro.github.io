@@ -25,15 +25,15 @@ const Header = () => {
               </a>
             </li>
             <li className="nav_item">
-              <a href="#skills" className="nav_link">
+              <a href="#experience" className="nav_link">
                 <i className="uil uil-file-alt nav_icon"></i>
-                Skills
+                Experience
               </a>
             </li>
             <li className="nav_item">
-              <a href="#services" className="nav_link">
+              <a href="#testimonials" className="nav_link">
                 <i className="uil uil-briefcase-alt nav_icon"></i>
-                Services
+                Testimonials
               </a>
             </li>
             <li className="nav_item">
