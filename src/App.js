@@ -6,6 +6,9 @@ import About from './components/About/about';
 import Experience from './components/Experience/experience';
 import Testimonials from './components/Testimonials/testimonials';
 import Contact from './components/Contact/contact';
+import Footer from './components/Footer/footer';
+import Scrollup from './components/Scrollup/scrollup';
+import Work from './components/Work/work';
 
 function App() {
   return (
@@ -15,9 +18,12 @@ function App() {
       <Home />
       <About />
       <Experience />
+      <Work />
       <Testimonials />
       <Contact />
     </main>
+    <Footer />
+    <Scrollup />
     </>
   );
 }
