@@ -34,30 +34,56 @@ function Work() {
               </div>
             </div>
           ) : (
-            <div className="project" key={index}>
-              <div className="left">
-                <a href={project.link} className="heading">
-                  {project.title}
-                </a>
-                <p className="desc">{project.desc}</p>
-                <div className="skill_container">
-                  {project.skills.map((skill, index) => (
-                    <p key={index}>{skill}</p>
-                  ))}
+            <>
+              <div className="project even" key={index}>
+                <div className="left">
+                  <a href={project.link} className="heading">
+                    {project.title}
+                  </a>
+                  <p className="desc">{project.desc}</p>
+                  <div className="skill_container">
+                    {project.skills.map((skill, index) => (
+                      <p key={index}>{skill}</p>
+                    ))}
+                  </div>
+                  <div>
+                    <a href={project.github} target="__blank" className="link">
+                      <i className="uil uil-github-alt"></i>
+                    </a>
+                    <a href={project.link} target="__blank" className="link">
+                      <i className="uil uil-arrow-up-right"></i>
+                    </a>
+                  </div>
                 </div>
-                <div>
-                  <a href={project.github} target="__blank" className="link">
-                    <i className="uil uil-github-alt"></i>
-                  </a>
-                  <a href={project.link} target="__blank" className="link">
-                    <i className="uil uil-arrow-up-right"></i>
-                  </a>
+                <div className="right">
+                  <img src={project.image} className="img" alt="project_img" />
                 </div>
               </div>
-              <div className="right">
-                <img src={project.image} className="img" alt="project_img" />
+              <div className="project pMobile" key={index}>
+                <div className="left">
+                  <img src={project.image} className="img" alt="project_img" />
+                </div>
+                <div className="right">
+                  <a href={project.link} className="heading">
+                    {project.title}
+                  </a>
+                  <p className="desc">{project.desc}</p>
+                  <div className="skill_container">
+                    {project.skills.map((skill, index) => (
+                      <p key={index}>{skill}</p>
+                    ))}
+                  </div>
+                  <div>
+                    <a href={project.github} target="__blank" className="link">
+                      <i className="uil uil-github-alt"></i>
+                    </a>
+                    <a href={project.link} target="__blank" className="link">
+                      <i className="uil uil-arrow-up-right"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
-            </div>
+            </>
           )
         )}
       </div>

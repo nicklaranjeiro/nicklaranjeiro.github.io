@@ -2,7 +2,7 @@
     "projects": [
         {
             "title":"Ecommerce",
-            "image": "./images/work2.jpg",
+            "image": "./images/work1.png",
             "desc": "A store front that sells designer items to consumers. You can go through the entire payment process and add a credit card to pay for the products, the payment is then sent to Stripe.",
             "skills": ["React", "Commerce.js", "Stripe API"],
             "github": "https://github.com/nicklaranjeiro/ecommerce",
@@ -10,8 +10,8 @@
         },
         {
             "title":"Buoy Tracker",
-            "image": "./images/work1.jpg",
-            "desc": "A site made for a customer wanting to keep track of the buoys in the current lakes. Google Maps API and adding a login system to keep track of users favorite buoys.",
+            "image": "./images/work2.png",
+            "desc": "A site made for a customer wanting to keep track of buoys in multiple lakes. APIs used for the map and weather plus a login system integrated to keep track of users favorite buoys.",
             "skills": ["Angular", "SQL", "Maps API"],
             "github": "https://github.com/nicklaranjeiro/buoys",
             "link": "https://nicklaranjeiro.github.io/buoys/"
