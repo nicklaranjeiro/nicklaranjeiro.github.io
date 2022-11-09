@@ -59,7 +59,7 @@ function Work() {
                   <img src={project.image} className="img" alt="project_img" />
                 </div>
               </div>
-              <div className="project pMobile" key={index}>
+              <div className="project pMobile" key={index + "mobile"}>
                 <div className="left">
                   <img src={project.image} className="img" alt="project_img" />
                 </div>
