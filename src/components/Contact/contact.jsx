@@ -1,28 +1,58 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const form = useRef();
 
+  const [emailSubmission, setDisable] = useState(false);
+
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_zog9h2l",
-        "template_qqgzz6r",
-        form.current,
-        "BeMhf-av2QSRe_Tma"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    if (!emailSubmission) {
+      emailjs
+        .sendForm(
+          "service_zog9h2l",
+          "template_qqgzz6r",
+          form.current,
+          "BeMhf-av2QSRe_Tma"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+      toast.success("Email Sent!", {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+      setDisable(true);
+      window.setTimeout(() => {
+        setDisable(false);
+      }, 30000);
+    } else {
+      toast.error("You must wait 30 seconds before sending another email!", {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+    }
   };
 
   return (
@@ -111,6 +141,18 @@ const Contact = () => {
                 ></path>
               </svg>
             </button>
+            <ToastContainer
+              position="top-right"
+              autoClose={3000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover={false}
+              theme="light"
+            />
           </form>
         </div>
       </div>
