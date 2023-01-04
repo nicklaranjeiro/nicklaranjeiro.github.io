@@ -15,12 +15,18 @@ const About = () => {
           <Info />
 
           <p className="about_description">
-            With over 3+ years experience as a full stack developer and
-            freelance mentor for React and Angular, I push best practices into
-            my work and teachings alike. While keeping the bar high, I know this
-            results in high quality code that is easier to maintain and use. I
-            always strive for the best in my work and am always learning new
-            things everyday.
+            As a software engineer with 3 years of experience, I have
+            consistently delivered successful projects and solutions for a range
+            of clients and companies. My expertise lies in full stack
+            development, with a focus on designing and implementing
+            comprehensive web architectures and scalable REST APIs. I have a
+            proven track record of upgrading codebases, improving performance
+            and security, and writing thorough end-to-end tests. In my most
+            recent role as a Full Stack Developer, I spearhead development for a
+            multi-tenant SaaS platform and successfully increased the number of
+            tenants on the platform by 30%. I am a proactive and collaborative
+            team player, consistently working closely with business teams to
+            ensure that solutions align with requirements and needs.
           </p>
 
           <a download="" href={CV} className="button button--flex">
