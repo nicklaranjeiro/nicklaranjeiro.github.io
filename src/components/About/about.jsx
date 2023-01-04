@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.css";
 // eslint-disable-next-line
-import CV from "../../assets/NicholasLaranjeiro-Resume.pdf";
+import CV from "../../assets/NicholasLaranjeiroResume.pdf";
 import Info from "./info";
 
 const About = () => {
