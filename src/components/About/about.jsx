@@ -15,7 +15,7 @@ const About = () => {
           <Info />
 
           <p className="about_description">
-            As a software engineer with 3 years of experience, I have
+            As a software engineer with 5 years of experience, I have
             consistently delivered successful projects and solutions for a range
             of clients and companies. My expertise lies in full stack
             development, with a focus on designing and implementing
