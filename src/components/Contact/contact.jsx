@@ -62,25 +62,6 @@ const Contact = () => {
 
       <div className="contact_container container grid">
         <div className="contact_content">
-          <h3 className="contact_title">Talk to me</h3>
-
-          <div className="contact_info">
-            <div className="contact_card">
-              <i className="bx bx-mail-send contact_card-icon"></i>
-              <h3 className="contact_card-title">Email</h3>
-              <span className="contact_card-data">
-                nicholaslaranjeiro@hotmail.com
-              </span>
-            </div>
-            <div className="contact_card">
-              <i className="bx bx-phone contact_card-icon"></i>
-              <h3 className="contact_card-title">Phone</h3>
-              <span className="contact_card-data">905-979-9232</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="contact_content">
           <h3 className="contact_title">Write me!</h3>
 
           <form ref={form} onSubmit={sendEmail} className="contact_form">
